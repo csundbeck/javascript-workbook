@@ -7,11 +7,32 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-
+//hand1
+//hand2
+//if hand1 === hand2 return "It's a tie!"
+//If hand1 is the winning hand, return hand1 wins
+//If hand2 is the winning hand, return hand2 wins
 function rockPaperScissors(hand1, hand2) {
+  var formatH1 = (hand1.trim()).toLowerCase();
+  let formatH2 = (hand2.trim()).toLowerCase();
 
-  // Write code here
-
+//If hand is paper, rock, or scissors, continue with comparison. Else return that the input is not valid.
+if (((formatH1 === "paper" || formatH1 === 'rock' || formatH1 === 'scissors')) && (formatH2 === "paper" || formatH2 === 'rock' || formatH2 === 'scissors')) {
+  if (formatH1 === formatH2) {
+    return "It's a tie!";
+  } else {
+    //Scenarios for hand1 to win. Else hand2 wins. 
+      if ((formatH1 === 'rock' && formatH2 === 'scissors') || 
+           (formatH1 === 'paper' && formatH2 === 'rock') || 
+           (formatH1 === 'scissors' && formatH2 === 'paper')) {
+            return "Hand one wins!";
+      } else {
+        return "Hand two wins!";
+      }
+    }
+  } else {
+    return 'That is not a valid input.';
+  } 
 }
 
 function getPrompt() {
