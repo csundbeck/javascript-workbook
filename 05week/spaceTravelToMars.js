@@ -9,7 +9,41 @@ let jobTypes = {
   programmer: 'Any Ship!'
 };
 
+//Create a class that represent a CrewMember
+//CrewMember should have name, job, specialSkill. Should has a method called enterShip() - should take in a ship as input
+//enterShip() should update the crew array in the instance of Ship
+
+//Create a class that represents a Ship
+//Ship hould have name, type, and ability, crew array.
+//Ship should have a method called missionStatement(). should return "Can't perform mission yet" if it has no crew. else method should return the ship's ability if there is at least one crew member 
 // Your code here
+
+class CrewMember {
+  constructor(name, job, specialSkill) {
+    this.name = name;
+    this.job = job;
+    this.specialSkill = specialSkill;
+  }
+  enterShip(ship) {
+    ship.crew.push(this);
+  }
+}
+
+class Ship {
+  constructor(name, type, ability) {
+    this.name = name;
+    this.type = type;
+    this.ability = ability;
+    this.crew = [];
+  }
+  missionStatement() {
+    if (this.crew.length == 0) {
+      return "Can't perform a mission yet.";
+    } else {
+      return this.ability;
+    }
+  }
+}
 
 //tests
 if (typeof describe === 'function'){
