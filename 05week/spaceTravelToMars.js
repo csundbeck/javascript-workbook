@@ -23,8 +23,10 @@ class CrewMember {
     this.name = name;
     this.job = job;
     this.specialSkill = specialSkill;
+    //this.ship = null;
   }
   enterShip(ship) {
+    this.ship = ship;
     ship.crew.push(this);
   }
 }
