@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="addressBook.css ">
+  <title>Fetch Practice</title>
+</head>
+<body>
+
+  
+  <div>
+    <h2>Abbress Book</h2>
+    <ol id='all-contacts'></ol>
+  </div>
+  <div id="button-container">
+      <!-- When you click this button, the posts collected in the fetch request will be logged in the console in your devtools tray -->
+      <button onclick="consoleContacts()">Console Contacts</button>
+      <!-- When you click this button the posts collected from the fetch request will be displayed below in the ul element with the id='all-posts' -->
+      <button onclick="displayContacts()">Display Contacts</button>
+  </div>
+
+  <script src="./addressBook.js"></script>
+</body>
+</html>
