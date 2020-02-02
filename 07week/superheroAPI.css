@@ -1,0 +1,89 @@
+body {
+    background: url('superhero-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#heros {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    color: yellow;
+}
+
+.power-rating {
+    font-size: 30px;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    justify-self: center;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color:yellow;
+}
+
+h3 {
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#button-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+button {
+    width: 300px;
+    padding: 20px;
+    font-family: 'Permanent Marker', cursive;
+    background-color: transparent;
+    color: yellow;
+    border: black solid 2px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+.hero-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-content: center;
+    align-self: center;
+}
+
+img {
+    transform: scale(0.6);
+    border-radius: 50%;
+    margin-bottom: -50px;
+}
