@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="superheroAPI.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker&display=swap" rel="stylesheet">
+  <title>Superheros Dual</title>
+</head>
+<body>
+  <div>
+    <h1>Superheros Dual</h1>
+    <div id="button-container">
+        <!-- When you click this button the posts collected from the fetch request will be displayed below in the ul element with the id='all-posts' -->
+        <button onclick="displayHeros()">Generate Heros</button>
+        <button id="fight" onclick="fight()">FIGHT!</button>
+    </div>
+    <div id="hero-container">
+        <ol id='heros'></ol>
+    </div>
+  </div>
+  <script src="./superheroAPI.js"></script>
+</body>
+</html>
